@@ -25,6 +25,43 @@ To make the setup script executable, run the following command in your terminal:
 chmod +x setup.sh
 ```
 
+https://github.com/s0md3v/roop/wiki/1.-Installation
+
+GPU Acceleration
+https://github.com/s0md3v/roop/wiki/2.-Acceleration
+
+https://github.com/s0md3v/roop/wiki/Advanced-Options
+
+```
+options:
+  -h, --help            show this help message and exit
+  -s SOURCE_PATH, --source SOURCE_PATH
+                        select an source image
+  -t TARGET_PATH, --target TARGET_PATH
+                        select an target image or video
+  -o OUTPUT_PATH, --output OUTPUT_PATH
+                        select output file or directory
+  --frame-processor {face_swapper,face_enhancer} [{face_swapper,face_enhancer} ...]
+                        pipeline of frame processors
+  --keep-fps            keep original fps
+  --keep-audio          keep original audio
+  --keep-frames         keep temporary frames
+  --many-faces          process every face
+  --video-encoder {libx264,libx265,libvpx-vp9}
+                        adjust output video encoder
+  --video-quality VIDEO_QUALITY
+                        adjust output video quality
+  --max-memory MAX_MEMORY
+                        maximum amount of RAM in GB
+  --execution-provider {cpu,...} [{cpu,...} ...]
+                        execution provider
+  --execution-threads EXECUTION_THREADS
+                        number of execution threads
+  -v, --version         show program's version number and exit
+```
+
+Use the -s/--source argument to run the program in CLI mode.
+
 <br>
 <div align="center">
 © Cursed Entertainment
