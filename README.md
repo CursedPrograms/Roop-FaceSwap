@@ -35,12 +35,9 @@ To make the setup script executable, run the following command in your terminal:
 chmod +x setup.sh
 ```
 
-https://github.com/s0md3v/roop/wiki/1.-Installation
-
-GPU Acceleration
-https://github.com/s0md3v/roop/wiki/2.-Acceleration
-
-https://github.com/s0md3v/roop/wiki/Advanced-Options
+[Installation Guide](https://github.com/s0md3v/roop/wiki/1.-Installation)
+[GPU Acceleration](https://github.com/s0md3v/roop/wiki/2.-Acceleration)
+[Advanced Options](https://github.com/s0md3v/roop/wiki/Advanced-Options)
 
 ```
 options:
