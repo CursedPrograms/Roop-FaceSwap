@@ -20,7 +20,7 @@
   </div>  
   <br>
 
-# Roop-FaceSwap-Uncensored
+# Roop-FaceSwap
 
 ## How to Run:
 ```bash
