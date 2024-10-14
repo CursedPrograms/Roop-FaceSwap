@@ -1,4 +1,4 @@
-[![Twitter: @NorowaretaGemu](https://img.shields.io/badge/contact-@NorowaretaGemu-blue.svg?style=flat)](https://x.com/NorowaretaGemu)
+[![Twitter: @NorowaretaGemu](https://img.shields.io/badge/X-@NorowaretaGemu-blue.svg?style=flat)](https://x.com/NorowaretaGemu)
 
 <br>
 <div align="center">
