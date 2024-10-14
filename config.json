@@ -1,0 +1,13 @@
+{
+    "Config": {
+      "AppName": "TemplateProject",
+      "Description": "",
+      "ProjectStructure": {
+        "MainScript": "main.py",
+        "DependenciesScript": "scripts/install-dependencies.py"
+      },
+      "Scripts": {
+
+      }
+    }
+  }
