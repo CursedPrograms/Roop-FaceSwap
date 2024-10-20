@@ -30,7 +30,7 @@
 pip install -r requirements.txt
 ```
 ```bash
-python main.py
+python run.py
 ```
 To make the setup script executable, run the following command in your terminal:
 
@@ -38,39 +38,48 @@ To make the setup script executable, run the following command in your terminal:
 chmod +x setup.sh
 ```
 
-[Installation Guide](https://github.com/s0md3v/roop/wiki/1.-Installation)
-[GPU Acceleration](https://github.com/s0md3v/roop/wiki/2.-Acceleration)
-[Advanced Options](https://github.com/s0md3v/roop/wiki/Advanced-Options)
+## Installation
+
+Be aware, the installation needs technical skills and is not for beginners. Please do not open platform and installation related issues on GitHub.
+
+[Basic](https://github.com/s0md3v/roop/wiki/1.-Installation) - It is more likely to work on your computer, but will be quite slow
+
+[Acceleration](https://github.com/s0md3v/roop/wiki/2.-Acceleration) - Unleash the full potential of your CPU and GPU
+
+
+## Usage
+
+Start the program with arguments:
 
 ```
-options:
-  -h, --help            show this help message and exit
-  -s SOURCE_PATH, --source SOURCE_PATH
-                        select an source image
-  -t TARGET_PATH, --target TARGET_PATH
-                        select an target image or video
-  -o OUTPUT_PATH, --output OUTPUT_PATH
-                        select output file or directory
-  --frame-processor {face_swapper,face_enhancer} [{face_swapper,face_enhancer} ...]
-                        pipeline of frame processors
-  --keep-fps            keep original fps
-  --keep-audio          keep original audio
-  --keep-frames         keep temporary frames
-  --many-faces          process every face
-  --video-encoder {libx264,libx265,libvpx-vp9}
-                        adjust output video encoder
-  --video-quality VIDEO_QUALITY
-                        adjust output video quality
-  --max-memory MAX_MEMORY
-                        maximum amount of RAM in GB
-  --execution-provider {cpu,...} [{cpu,...} ...]
-                        execution provider
-  --execution-threads EXECUTION_THREADS
-                        number of execution threads
-  -v, --version         show program's version number and exit
+python run.py [options]
+
+-h, --help                                                                 show this help message and exit
+-s SOURCE_PATH, --source SOURCE_PATH                                       select an source image
+-t TARGET_PATH, --target TARGET_PATH                                       select an target image or video
+-o OUTPUT_PATH, --output OUTPUT_PATH                                       select output file or directory
+--frame-processor FRAME_PROCESSOR [FRAME_PROCESSOR ...]                    frame processors (choices: face_swapper, face_enhancer, ...)
+--keep-fps                                                                 keep target fps
+--keep-frames                                                              keep temporary frames
+--skip-audio                                                               skip target audio
+--many-faces                                                               process every face
+--reference-face-position REFERENCE_FACE_POSITION                          position of the reference face
+--reference-frame-number REFERENCE_FRAME_NUMBER                            number of the reference frame
+--similar-face-distance SIMILAR_FACE_DISTANCE                              face distance used for recognition
+--temp-frame-format {jpg,png}                                              image format used for frame extraction
+--temp-frame-quality [0-100]                                               image quality used for frame extraction
+--output-video-encoder {libx264,libx265,libvpx-vp9,h264_nvenc,hevc_nvenc}  encoder used for the output video
+--output-video-quality [0-100]                                             quality used for the output video
+--max-memory MAX_MEMORY                                                    maximum amount of RAM in GB
+--execution-provider {cpu} [{cpu} ...]                                     available execution provider (choices: cpu, ...)
+--execution-threads EXECUTION_THREADS                                      number of execution threads
+-v, --version                                                              show program's version number and exit
 ```
 
-Use the -s/--source argument to run the program in CLI mode.
+
+### Headless
+
+Using the `-s/--source`, `-t/--target` and `-o/--output` argument will run the program in headless mode.
 
 <br>
 <div align="center">
