@@ -9,7 +9,7 @@ if not exist "%VENV_DIR%" (
 )
 
 rem 
-call "%VENV_DIR%\Scripts\activate" && python main.py
+call "%VENV_DIR%\Scripts\activate" && python run.py
 
 rem 
 pause

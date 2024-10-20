@@ -10,7 +10,7 @@ fi
 
 # Activate the virtual environment and run the Python script
 source "$VENV_DIR/bin/activate"
-python main.py
+python run.py
 
 # Pause for user input before closing (optional)
 read -p "Press Enter to continue..."
