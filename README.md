@@ -43,6 +43,12 @@ chmod +x setup.sh
 
 <br>
 
+## Requirements:
+
+```bash
+flask
+```
+
 ## Installation
 
 Be aware, the installation needs technical skills and is not for beginners. Please do not open platform and installation related issues on GitHub.
