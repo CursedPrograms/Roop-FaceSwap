@@ -47,6 +47,8 @@ Be aware, the installation needs technical skills and is not for beginners. Plea
 [Acceleration](https://github.com/s0md3v/roop/wiki/2.-Acceleration) - Unleash the full potential of your CPU and GPU
 
 
+<br>
+
 ## Usage
 
 Start the program with arguments:
@@ -76,6 +78,7 @@ python run.py [options]
 -v, --version                                                              show program's version number and exit
 ```
 
+<br>
 
 ### Headless
 
