@@ -89,8 +89,6 @@ gfpgan==1.3.8
 
 ## Installation
 
-Be aware, the installation needs technical skills and is not for beginners. Please do not open platform and installation related issues on GitHub.
-
 [Basic](https://github.com/s0md3v/roop/wiki/1.-Installation) - It is more likely to work on your computer, but will be quite slow
 
 [Acceleration](https://github.com/s0md3v/roop/wiki/2.-Acceleration) - Unleash the full potential of your CPU and GPU
