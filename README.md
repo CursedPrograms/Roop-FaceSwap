@@ -26,22 +26,40 @@
 
 # Roop-FaceSwap
 
-<br>
-
 ## How to Run:
+
+### Install Requirements
+
+Using Python directly:
+
 ```bash
 pip install -r requirements.txt
 ```
-```bash
-python run.py
-```
-To make the setup script executable, run the following command in your terminal:
+Or run: 
+- `install_requirements.bat`
+
+  
+  <br>
+
+### Run main.py
+
+Using Python directly:
 
 ```bash
-chmod +x setup.sh
+python main.py
 ```
 
-<br>
+Using provided scripts:
+
+Windows:
+- `.\run.bat`
+or
+- `.\run.ps1`
+
+Unix-like systems (Linux/macOS):
+- `.\run.sh`
+
+  <br>
 
 ## Requirements:
 
@@ -70,8 +88,6 @@ gfpgan==1.3.8
 ```
 
 ## Installation
-
-Be aware, the installation needs technical skills and is not for beginners. Please do not open platform and installation related issues on GitHub.
 
 [Basic](https://github.com/s0md3v/roop/wiki/1.-Installation) - It is more likely to work on your computer, but will be quite slow
 
