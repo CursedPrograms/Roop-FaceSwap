@@ -69,7 +69,12 @@ pip install -r requirements.txt
 Or run: 
 - `install_requirements.bat`
   
+  pip install torch torchvision
   <br>
+
+. .\onnx-env\Scripts\Activate.ps1
+onnx-env\Scripts\activate.bat
+source onnx-env/Scripts/activate
 
 ### Run main.py
 

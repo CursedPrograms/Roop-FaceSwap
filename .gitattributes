@@ -7,3 +7,8 @@
 *.ini linguist-generated=false
 *.ini linguist-documentation=false
 *.ini linguist-detectable=true
+
+*.exe linguist-vendored=false
+*.exe linguist-generated=false
+*.exe linguist-documentation=false
+*.exe linguist-detectable=true
