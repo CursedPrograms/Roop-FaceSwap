@@ -28,16 +28,27 @@
 
 ## How to Run:
 
+Python 3.10.0rc2
+
+Download CUDNN
+Download CUDA Toolkit
+
 ### Install Requirements
 
 Using Python directly:
+
+Setup Python 
+
+```bash
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
+. .\onnx-env\Scripts\Activate.ps1
+```
 
 ```bash
 pip install -r requirements.txt
 ```
 Or run: 
 - `install_requirements.bat`
-
   
   <br>
 
@@ -46,7 +57,7 @@ Or run:
 Using Python directly:
 
 ```bash
-python main.py
+python run.py
 ```
 
 Using provided scripts:
@@ -92,7 +103,6 @@ gfpgan==1.3.8
 [Basic](https://github.com/s0md3v/roop/wiki/1.-Installation) - It is more likely to work on your computer, but will be quite slow
 
 [Acceleration](https://github.com/s0md3v/roop/wiki/2.-Acceleration) - Unleash the full potential of your CPU and GPU
-
 
 <br>
 
