@@ -26,21 +26,40 @@
 
 # Roop-FaceSwap
 
-## How to Run:
+## Requirements
 
-Python 3.10.0rc2
+- [Python 3.10.0rc2 (or 3.10.x)](https://www.python.org/downloads/release/python-3100rc2/)
+- [CUDA Toolkit](https://developer.nvidia.com/downloads) (must be compatible with your GPU and TensorFlow)
+- [cuDNN](https://developer.nvidia.com/cudnn-downloads) (extract into your CUDA installation path)
 
-Download CUDNN
-Download CUDA Toolkit
+### Verifying CUDA and cuDNN Installation
 
-### Install Requirements
-
-Using Python directly:
-
-Setup Python 
+To verify that CUDA is installed correctly, run the following in Command Prompt or PowerShell:
 
 ```bash
+nvcc --version
+This should return the version of the CUDA compiler. If it says 'nvcc' is not recognized, make sure the CUDA bin directory is added to your system PATH (e.g., C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.0\bin).
+```
+
+For cuDNN, ensure the following cuDNN files are copied into your CUDA folder:
+
+```bash
+bin\cudnn*.dll → into CUDA_PATH\bin
+```
+```bash
+include\cudnn*.h → into CUDA_PATH\include
+```
+```bash
+lib\x64\cudnn*.lib → into CUDA_PATH\lib\x64
+```
+
+## Setup Instructions
+
+### 1. Create and Activate the Virtual Environment
+
+```powershell
 Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
+& "C:\Users\YourUsername\AppData\Local\Programs\Python\Python310\python.exe" -m venv onnx-env
 . .\onnx-env\Scripts\Activate.ps1
 ```
 
@@ -72,7 +91,7 @@ Unix-like systems (Linux/macOS):
 
   <br>
 
-## Requirements:
+## Python Requirements:
 
 ```bash
 --extra-index-url https://download.pytorch.org/whl/cu118
